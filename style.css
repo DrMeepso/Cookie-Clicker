@@ -1,0 +1,61 @@
+html, body {
+    margin: 0; padding:0; border: 0;
+    overflow: hidden
+    background:	#FFFFFF;
+}
+#header, #middle, #footer {
+    position: absolute;
+    width: 100%
+}
+#header {
+    background: #777;
+    height: 120px;
+    top: 0
+}
+#middle {
+    top: 120px;
+    bottom: 150px
+}
+#footer {
+    background: #777;
+    height: 50px;
+    bottom: 0
+}
+#left, #right {
+    overflow-y: scroll
+}
+#left {
+    background: #87ceeb;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 125%
+}
+#right {
+    background-image: url("UpgradeBG.jpg");
+    /* background: #999; */
+    position: absolute;
+    left: 50%;
+    top: 0;
+    float: right;
+    width: 50%;
+    height: 125%
+}
+h1, h2, h3, lable, p {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+div.c {
+  line-height: 80%;
+}
+button {
+  background-color: #87ceeb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
