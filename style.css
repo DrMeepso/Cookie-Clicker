@@ -1,3 +1,8 @@
+@font-face {
+    font-family: NiceLook;
+    src: url(NewTegomin-Regular.ttf);
+  }
+
 html, body {
     margin: 0; padding:0; border: 0;
     overflow: hidden
@@ -12,37 +17,45 @@ html, body {
     top: 0
 }
 #middle {
+    background-image: url("UpgradeBG.jpg");
     top: 120px;
-    bottom: 150px
+    bottom: 0px
 }
 #footer {
     background: #777;
     height: 50px;
     bottom: 0
 }
-#left, #right {
-    overflow-y: scroll
-}
 #left {
-    background: #87ceeb;
+    background: rgba(134, 134, 134, 0.329);
     position: absolute;
     left: 0;
     top: 0;
-    width: 50%;
+    width: 30%;
     /* height: 120% */
 }
-#right {
-    background-image: url("UpgradeBG.jpg");
-    /* background: #999; */
+#center {
+    background: rgba(255, 255, 255, 0);
     position: absolute;
-    left: 50%;
+    left: 30%;
     top: 0;
     float: right;
     width: 50%;
+    overflow-y: scroll
+    /* height: 120% */
+}
+#right {
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 80%;
+    top: 0;
+    float: right;
+    width: 20%;
+    overflow-y: scroll
     /* height: 120% */
 }
 h1, h2, h3, lable, p {
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: NiceLook;
 }
 div.c {
   line-height: 80%;
@@ -56,5 +69,10 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: NiceLook;
 }
+button:disabled {
+    background-color: #416370;
+    border: none;
+    color: rgb(143, 143, 143);
+  }

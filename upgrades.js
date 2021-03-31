@@ -48,3 +48,12 @@ UG3P = UG3P * 2
 UpdateText()
 }
 });
+
+//bottom
+//Update Buttom Status
+setInterval(function(){ 
+if (Score >= UG1P) {UG1.disabled = false}else{UG1.disabled = true}
+if (Score >= UG2P) {UG2.disabled = false}else{UG2.disabled = true}
+if (Score >= UG3P) {UG3.disabled = false}else{UG3.disabled = true}
+
+}, 1);
