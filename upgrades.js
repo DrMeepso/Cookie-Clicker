@@ -2,13 +2,13 @@
 //Grandma 
 var UG1 = document.getElementById("Upgrade1")
 var UG1L = document.getElementById("UG1L")
-var UG1P = 1000
+var UG1P = 100
 var UG1A = 0
 
 UG1.addEventListener("click", function() {
 if (Score >= UG1P) {
 UG1A += 1
-ACPS += 10
+ACPS += 1
 Score -= UG1P
 UG1P += Math.round(UG1P /2)
 UpdateText()
@@ -16,16 +16,16 @@ UpdateText()
 });
 
 //Define Upgrade 2  
-//Cheff
+//Garden
 var UG2 = document.getElementById("Upgrade2")
 var UG2L = document.getElementById("UG2L")
-var UG2P = 10000
+var UG2P = 1100
 var UG2A = 0
 
 UG2.addEventListener("click", function() {
 if (Score >= UG2P) {
 UG2A += 1
-ACPS += 100
+ACPS += 8
 Score -= UG2P
 UG2P += Math.round(UG2P /2)
 UpdateText()

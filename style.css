@@ -73,7 +73,7 @@ button:disabled {
     border: none;
     color: rgb(143, 143, 143);
   }
-
-#cookieSep {
-    border-right: 30%;
+#TextInfo {
+    background: rgba(134, 134, 134, 0.329);
+    top: 10;
 }
