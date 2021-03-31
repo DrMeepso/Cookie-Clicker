@@ -8,6 +8,12 @@ var clickammount = 1
 var leftDiv = document.getElementById("left")
 var rightDiv = document.getElementById("right")
 var centerDiv = document.getElementById("center")
+//{
+var click1 = new Audio("https://orteil.dashnet.org/cookieclicker/snd/clickb1.mp3");
+var click2 = new Audio("https://orteil.dashnet.org/cookieclicker/snd/clickb2.mp3");
+var click3 = new Audio("https://orteil.dashnet.org/cookieclicker/snd/clickb3.mp3");
+//}
+
 
 if (navigator.platform == "Win32") {
     leftDiv.style.height = "120%"

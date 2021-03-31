@@ -10,7 +10,7 @@ if (Score >= UG1P) {
 UG1A += 1
 ACPS += 10
 Score -= UG1P
-UG1P = UG1P * 2
+UG1P += Math.round(UG1P /2)
 UpdateText()
 }
 });
@@ -27,7 +27,7 @@ if (Score >= UG2P) {
 UG2A += 1
 ACPS += 100
 Score -= UG2P
-UG2P = UG2P * 2
+UG2P += Math.round(UG2P /2)
 UpdateText()
 }
 });
@@ -44,7 +44,7 @@ if (Score >= UG3P) {
 clickammount += 1
 UG3A += 1
 Score -= UG3P
-UG3P = UG3P * 2
+UG3P += Math.round(UG3P /2)
 UpdateText()
 }
 });
