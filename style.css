@@ -1,7 +1,6 @@
 html, body {
     margin: 0; padding:0; border: 0;
     overflow: hidden
-    background:	#FFFFFF;
 }
 #header, #middle, #footer {
     position: absolute;
@@ -30,7 +29,7 @@ html, body {
     left: 0;
     top: 0;
     width: 50%;
-    height: 125%
+    /* height: 120% */
 }
 #right {
     background-image: url("UpgradeBG.jpg");
@@ -40,7 +39,7 @@ html, body {
     top: 0;
     float: right;
     width: 50%;
-    height: 125%
+    /* height: 120% */
 }
 h1, h2, h3, lable, p {
   font-family: "Lucida Console", "Courier New", monospace;

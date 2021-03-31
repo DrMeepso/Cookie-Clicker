@@ -5,6 +5,17 @@ var Score = 0
 var ACPS = 0
 var CPS = 0
 var clickammount = 1
+var leftDiv = document.getElementById("left")
+var rightDiv = document.getElementById("right")
+
+if (navigator.platform == "Win32") {
+    leftDiv.style.height = "120%"
+    rightDiv.style.height = "120%"
+}
+if (navigator.platform == "Linux x86_64") {
+    leftDiv.style.height = "125%"
+    rightDiv.style.height = "125%"
+    }
 
 //if (localStorage.Score == undefined) {
 //console.log("First Time")
