@@ -1,10 +1,9 @@
 @font-face {
     font-family: NiceLook;
-    src: url(SyneMono-Regular.ttf);
+    src: url(NewTegomin-Regular.ttf);
   }
 
 html, body {
-    background-image: url("Background.jpg");
     margin: 0; padding:0; border: 0;
     overflow: hidden
 }
@@ -15,18 +14,20 @@ html, body {
 #header {
     background: #777;
     background-image: url("img/footer.jpg");
-    height: 50px;
-    top: 0
+    height: 120px;
+    top: 0;
+    z-index: 1;
 }
 #middle {
-    top: 50px;
+    background-image: url("UpgradeBG.jpg");
+    top: 120px;
     bottom: 0px
 }
 #footer {
-    background: rgba(119,119,119,0.2);
+    background: #777;
     background-image: url("img/footer.jpg");
     height: 50px;
-    bottom: 0;
+    bottom: 0
 }
 #left {
     background: rgba(134, 134, 134, 0.329);
@@ -61,7 +62,7 @@ h1, h2, h3, lable, p {
 }
 button {
   background-color: #87ceeb;
-  border-style: none;
+  border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -72,29 +73,23 @@ button {
 }
 button:disabled {
     background-color: #416370;
+    border: none;
     color: rgb(143, 143, 143);
-    border-style: none;
-}
-#TextInfo {
-    background: rgba(134, 134, 134, 0.329);
-    top: 10;
-}
-#container {
-  overflow: hidden;
-}
-
-#sliding-background {
-  background: url("..path/to/image") repeat-y;
-  height: 5076px;
-  width: 16px;
-  animation: slide 20s linear infinite;
-}
-
-@keyframes slide{
-  0%{
-    transform: translate3d(0, 0, 0);
   }
-  100%{
-    transform: translate3d(0, -1692px, 0);
-  }
+
+#scroll {
+  background: url("img/cookieShower3.png") repeat-y;
+  height: 1526;
+  width: 30%;
+  animation: slide 7s linear infinite;
+  z-index: -1;
 }
+  
+  @keyframes slide{
+    0%{
+      transform: translate3d(0, -512px, 0);
+    }
+    100%{
+      transform: translate3d(0, 0, 0);
+    }
+  }
