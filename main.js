@@ -11,6 +11,7 @@ var centerDiv = document.getElementById("center")
 var middleDiv = document.getElementById("middle")
 var cookieWidth = 300
 var cookieHeight = 300
+var botRightCent = document.createElement("CENTER")
 
 //{
 var click1 = new Audio("https://orteil.dashnet.org/cookieclicker/snd/clickb1.mp3");
@@ -31,6 +32,7 @@ alert("Unknown devise type\n--" + navigator.platform + "-- If you see this pleas
 leftDiv.style.height = "125%"
 rightDiv.style.height = "125%"
 } 
+
 //if (localStorage.Score == undefined) {
 //console.log("First Time")
 //} else {
@@ -87,7 +89,17 @@ UG3L.innerText = "Double Your Clicks \n$" + UG3P
 UG4L.innerText = "Buy Mine\n$" + UG4P
 UG5L.innerText = "Buy Factory\n$" + UG5P
 UG6L.innerText = "Buy Bank\n$" + UG6P
-}
+if (ACPS >= 10) {
+    document.getElementById("scroll1").hidden = false
+} 
+if (ACPS >= 100) {
+    document.getElementById("scroll1").hidden = true
+    document.getElementById("scroll2").hidden = false
+} 
+if (ACPS >= 1000) {
+    document.getElementById("scroll2").hidden = true
+    document.getElementById("scroll3").hidden = false
+}}
 
 function lerp (start, end, amt){
     return (1-amt)*start+amt*end
@@ -100,12 +112,19 @@ Score = Cookies
 
 function BetaTag (Password) {
 if (Password == "Pog123" || localStorage.Tag == "Beta") {
-    middleDiv.appendChild(BTTag)
+    rightDiv.appendChild(botRightCent)
+    botRightCent.appendChild(BTTag)
+
     BTTag.src = "img/BetaTester.png"
     BTTag.width = "100"
     BTTag.height = "100"
     localStorage.Tag = "Beta"
 }}
+
+document.getElementById("scroll1").hidden = true
+document.getElementById("scroll2").hidden = true
+document.getElementById("scroll3").hidden = true
+
 
 UpdateText()
 BetaTag()

@@ -14,13 +14,13 @@ html, body {
 #header {
     background: #777;
     background-image: url("img/footer.jpg");
-    height: 120px;
+    height: 60px;
     top: 0;
     z-index: 1;
 }
 #middle {
     background-image: url("UpgradeBG.jpg");
-    top: 120px;
+    top: 60px;
     bottom: 0px
 }
 #footer {
@@ -77,7 +77,23 @@ button:disabled {
     color: rgb(143, 143, 143);
   }
 
-#scroll {
+#scroll1 {
+  background: url("img/cookieShower1.png") repeat-y;
+  height: 1526;
+  width: 30%;
+  animation: slide 7s linear infinite;
+  z-index: -1;
+}  
+
+#scroll2 {
+  background: url("img/cookieShower2.png") repeat-y;
+  height: 1526;
+  width: 30%;
+  animation: slide 7s linear infinite;
+  z-index: -1;
+}  
+
+#scroll3 {
   background: url("img/cookieShower3.png") repeat-y;
   height: 1526;
   width: 30%;
