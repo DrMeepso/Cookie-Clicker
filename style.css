@@ -77,29 +77,13 @@ button:disabled {
     color: rgb(143, 143, 143);
   }
 
-#scroll1 {
+#scroll {
   background: url("img/cookieShower1.png") repeat-y;
   height: 1526;
   width: 30%;
   animation: slide 7s linear infinite;
   z-index: -1;
 }  
-
-#scroll2 {
-  background: url("img/cookieShower2.png") repeat-y;
-  height: 1526;
-  width: 30%;
-  animation: slide 7s linear infinite;
-  z-index: -1;
-}  
-
-#scroll3 {
-  background: url("img/cookieShower3.png") repeat-y;
-  height: 1526;
-  width: 30%;
-  animation: slide 7s linear infinite;
-  z-index: -1;
-}
   
   @keyframes slide{
     0%{

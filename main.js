@@ -90,15 +90,14 @@ UG4L.innerText = "Buy Mine\n$" + UG4P
 UG5L.innerText = "Buy Factory\n$" + UG5P
 UG6L.innerText = "Buy Bank\n$" + UG6P
 if (ACPS >= 10) {
-    document.getElementById("scroll1").hidden = false
+    document.getElementById("scroll").hidden = false
+    document.getElementById("scroll").style = "background: url(img/cookieShower1.png) repeat-y;height: 1526;width: 30%;animation: slide 7s linear infinite;"
 } 
 if (ACPS >= 100) {
-    document.getElementById("scroll1").hidden = true
-    document.getElementById("scroll2").hidden = false
+    document.getElementById("scroll").style = "background: url(img/cookieShower2.png) repeat-y;height: 1526;width: 30%;animation: slide 7s linear infinite;"
 } 
 if (ACPS >= 1000) {
-    document.getElementById("scroll2").hidden = true
-    document.getElementById("scroll3").hidden = false
+    document.getElementById("scroll").style = "background: url(img/cookieShower3.png) repeat-y;height: 1526;width: 30%;animation: slide 7s linear infinite;"
 }}
 
 function lerp (start, end, amt){
@@ -121,9 +120,7 @@ if (Password == "Pog123" || localStorage.Tag == "Beta") {
     return "Igh here you go"
 }}
 
-document.getElementById("scroll1").hidden = true
-document.getElementById("scroll2").hidden = true
-document.getElementById("scroll3").hidden = true
+document.getElementById("scroll").hidden = true
 
 
 UpdateText()
