@@ -6,6 +6,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
 </head>
 
 <body>
@@ -14,27 +15,24 @@
     <br>
     <div class = "c" style="line-height: 80%;">
     <br>
-    <h1>Cookie Clicker</h1>
+    <h1 style="font-size: 40px;">Cookie Clicker</h1>
     </div>
     </center>
 </div>
-
+<!-- 
+<img src="panelVertical.png" alt="Line" width="16" height="512" id="sliding-background">
+-->
 <div id="middle">
     <div id="left">
-        <br>
         <center>
-        <br>
         <h2 id="Text">Cookies: 0</h2>
         <h3 id="CPS">CPS: 0</h3>
         <br>
         <div id = "CookieDiv">
-        <img src="cookie.png" alt="Cookie" width="300" height="300" id="Cookie">
+        <img src="img/cookie.png" alt="Cookie" width="300" height="300" id="Cookie">
         </div>
         </center>
     </div>
-    <!--
-    <img src="panelVertical.png" alt="Line" width="16" height="512" id="cookieSep">
-    -->
     <div id="center">
     <center><h1>Overview</h1></center>
 
@@ -42,27 +40,47 @@
     <div id="right">
     <center><h1>Upgrades</h1></center>
     <br>
-    <button id="Upgrade3">
-    <img src="Mouse.png" alt="Mouse" width="32" height="32">
-    <lable for="Upgrade3" id="UG3L">Double Your Clicks For $0</lable>
+        
+    <button id="Upgrade3" style="width: 100%; height: 100px; overflow-y: hidden;">
+    <img src="img/Mouse.png" alt="Mouse" width="64" height="64" style="display:inline-block; margin-right:1px">
+    <lable for="Upgrade3" id="UG3L" style="display:inline-block;">Double Your Clicks For $0</lable>
     </button>
     <br>
-    <button id="Upgrade1">
-    <img src="Gma.png" alt="Mouse" width="32" height="32">
-    <lable for="Upgrade1" id="UG1L">Buy Grandma For $0</lable>
+        
+    <button id="Upgrade1" style="width: 100%; height: 100px; overflow-y: hidden;">
+    <img src="img/Gma.png" alt="Mouse" width="64" height="64" style="display:inline-block; margin-right:1px">
+    <lable for="Upgrade1" id="UG1L" style="display:inline-block;">Buy Grandma For $0</lable>
     </button>
     <br>
-    <button id="Upgrade2">
-    <img src="Garden.png" alt="Mouse" width="32" height="32">
-    <lable for="Upgrade2" id="UG2L">Buy Garden For $0</lable>
+        
+    <button id="Upgrade2" style="width: 100%; height: 100px; overflow-y: hidden;">
+    <img src="img/Garden.png" alt="Mouse" width="64" height="64" style="display:inline-block; margin-right:1px">
+    <lable for="Upgrade2" id="UG2L" style="display:inline-block;">Buy Garden For $0</lable>
     </button>
     <br>
-    
+        
+    <button id="Upgrade4" style="width: 100%; height: 100px; overflow-y: hidden;">
+    <img src="img/Mines.png" alt="Mouse" width="64" height="64" style="display:inline-block; margin-right:1px">
+    <lable for="Upgrade4" id="UG4L" style="display:inline-block;">Buy Mine For $0</lable>
+    </button>
+    <br>    
+        
+    <button id="Upgrade5" style="width: 100%; height: 100px; overflow-y: hidden;">
+    <img src="img/Factory.png" alt="Mouse" width="64" height="64" style="display:inline-block; margin-right:10px">
+    <lable for="Upgrade5" id="UG5L" style="display:inline-block;">Buy Bank For $0</lable>
+    </button>
+    <br>
+
+    <button id="Upgrade6" style="width: 100%; height: 100px; overflow-y: hidden;">
+    <img src="img/Bank.png" alt="Mouse" width="64" height="64" style="display:inline-block; margin-right:10px">
+    <lable for="Upgrade6" id="UG6L" style="display:inline-block;">Buy Bank For $0</lable>
+    </button>
+    <br>
     </div>
 </div>
 
 <div id="footer">
-<center><p style="top: 50%;">V 0.013</p></center>
+<center><p style="top: 50%;">V 0.014</p></center>
 </div>
 </body>
 <script src="upgrades.js"></script>

@@ -3,7 +3,6 @@ var Text = document.getElementById("Text")
 var CPSText = document.getElementById("CPS")
 var Score = 0
 var ACPS = 0
-var CPS = 0
 var clickammount = 1
 var leftDiv = document.getElementById("left")
 var rightDiv = document.getElementById("right")
@@ -23,9 +22,9 @@ if (navigator.platform == "Win32") {
     rightDiv.style.height = "120%"
     centerDiv.style.height = "120%"
 } else if (navigator.platform == "Linux x86_64") {
-    leftDiv.style.height = "125%"
-    rightDiv.style.height = "125%"
-    centerDiv.style.height = "125%"
+    leftDiv.style.height = "92%"
+    rightDiv.style.height = "92%"
+    centerDiv.style.height = "92%"
 } else {
 alert("Unknown devise type\n--" + navigator.platform + "-- If you see this please tell zach")
 leftDiv.style.height = "125%"
@@ -39,10 +38,9 @@ rightDiv.style.height = "125%"
 //}
 
 setInterval(function(){ 
-    //this code runs every second 
-    Auto(ACPS)
-    CPS = 0
-}, 1000);
+    //this code runs every msecond 
+    Auto(ACPS / 200)
+}, 1);
 
 setInterval(function(){ 
     //this code runs every msecond 
@@ -61,7 +59,6 @@ function Auto(ammount){
 Score += ammount
 UpdateText()
 if (ammount > 0) {
-Cookieclick()
 }}
 
 function Cookieclick () {
@@ -80,12 +77,15 @@ function Cookieclick () {
 }
 
 function UpdateText(){
-document.title = Score + " cookies - Cookie Clicker"
-Text.innerText = "Cookies: " + Score
+document.title = Math.round(Score) + " cookies - Cookie Clicker"
+Text.innerText = "Cookies: " + Math.round(Score)
 CPSText.innerText = "CPS: " + (ACPS)
-UG1L.innerText = "Buy Grandma For $" + UG1P
-UG2L.innerText = "Buy Garden For $" + UG2P
-UG3L.innerText = "Double Your Clicks For $" + UG3P
+UG1L.innerText = "Buy Grandma \n$" + UG1P
+UG2L.innerText = "Buy Garden \n$" + UG2P
+UG3L.innerText = "Double Your Clicks \n$" + UG3P
+UG4L.innerText = "Buy Mine\n$" + UG4P
+UG5L.innerText = "Buy Factory\n$" + UG5P
+UG6L.innerText = "Buy Bank\n$" + UG6P
 
 localStorage.Score = Score
 localStorage.CPS = CPS

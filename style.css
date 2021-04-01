@@ -1,9 +1,10 @@
 @font-face {
     font-family: NiceLook;
-    src: url(NewTegomin-Regular.ttf);
+    src: url(SyneMono-Regular.ttf);
   }
 
 html, body {
+    background-image: url("Background.jpg");
     margin: 0; padding:0; border: 0;
     overflow: hidden
 }
@@ -17,7 +18,6 @@ html, body {
     top: 0
 }
 #middle {
-    background-image: url("UpgradeBG.jpg");
     top: 120px;
     bottom: 0px
 }
@@ -59,7 +59,7 @@ h1, h2, h3, lable, p {
 }
 button {
   background-color: #87ceeb;
-  border: none;
+  border-style: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -70,10 +70,29 @@ button {
 }
 button:disabled {
     background-color: #416370;
-    border: none;
     color: rgb(143, 143, 143);
-  }
+    border-style: none;
+}
 #TextInfo {
     background: rgba(134, 134, 134, 0.329);
     top: 10;
+}
+#container {
+  overflow: hidden;
+}
+
+#sliding-background {
+  background: url("..path/to/image") repeat-y;
+  height: 5076px;
+  width: 16px;
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(0, -1692px, 0);
+  }
 }
