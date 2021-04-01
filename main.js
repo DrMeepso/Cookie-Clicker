@@ -114,11 +114,11 @@ function BetaTag (Password) {
 if (Password == "Pog123" || localStorage.Tag == "Beta") {
     rightDiv.appendChild(botRightCent)
     botRightCent.appendChild(BTTag)
-
     BTTag.src = "img/BetaTester.png"
     BTTag.width = "100"
     BTTag.height = "100"
     localStorage.Tag = "Beta"
+    return "Igh here you go"
 }}
 
 document.getElementById("scroll1").hidden = true
