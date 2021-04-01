@@ -14,17 +14,19 @@ html, body {
 }
 #header {
     background: #777;
-    height: 120px;
+    background-image: url("img/footer.jpg");
+    height: 50px;
     top: 0
 }
 #middle {
-    top: 120px;
+    top: 50px;
     bottom: 0px
 }
 #footer {
-    background: #777;
+    background: rgba(119,119,119,0.2);
+    background-image: url("img/footer.jpg");
     height: 50px;
-    bottom: 0
+    bottom: 0;
 }
 #left {
     background: rgba(134, 134, 134, 0.329);

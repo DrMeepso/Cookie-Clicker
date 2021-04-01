@@ -22,9 +22,9 @@ if (navigator.platform == "Win32") {
     rightDiv.style.height = "120%"
     centerDiv.style.height = "120%"
 } else if (navigator.platform == "Linux x86_64") {
-    leftDiv.style.height = "92%"
-    rightDiv.style.height = "92%"
-    centerDiv.style.height = "92%"
+    leftDiv.style.height = "92.5%"
+    rightDiv.style.height = "92.5%"
+    centerDiv.style.height = "92.5%"
 } else {
 alert("Unknown devise type\n--" + navigator.platform + "-- If you see this please tell zach")
 leftDiv.style.height = "125%"
