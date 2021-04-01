@@ -87,15 +87,15 @@ UpdateText()
 //Bank
 var UG6 = document.getElementById("Upgrade6")
 var UG6L = document.getElementById("UG6L")
-var UG6P = 130000
+var UG6P = 1400000
 var UG6A = 0
 
 UG6.addEventListener("click", function() {
 if (Score >= UG6P) {
 UG6A += 1
-ACPS += 260
+ACPS += 1400
 Score -= UG6P
-UG6P += Math.round(130000*Math.pow(1.15,UG2A))
+UG6P += Math.round(1400000*Math.pow(1.15,UG2A))
 UpdateText()
 }
 });
