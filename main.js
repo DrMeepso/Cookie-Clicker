@@ -91,13 +91,13 @@ UG5L.innerText = "Buy Factory\n$" + UG5P
 UG6L.innerText = "Buy Bank\n$" + UG6P
 if (ACPS >= 10) {
     document.getElementById("scroll").hidden = false
-    document.getElementById("scroll").style = "background: url(img/cookieShower1.png) repeat-y;height: 1526;width: 30%;animation: slide 7s linear infinite;"
+    document.getElementById("scroll").style = "background: url(img/cookieShower1.png);"
 } 
 if (ACPS >= 100) {
-    document.getElementById("scroll").style = "background: url(img/cookieShower2.png) repeat-y;height: 1526;width: 30%;animation: slide 7s linear infinite;"
+    document.getElementById("scroll").style = "background: url(img/cookieShower2.png);"
 } 
 if (ACPS >= 1000) {
-    document.getElementById("scroll").style = "background: url(img/cookieShower3.png) repeat-y;height: 1526;width: 30%;animation: slide 7s linear infinite;"
+    document.getElementById("scroll").style = "background: url(img/cookieShower3.png);"
 }}
 
 function lerp (start, end, amt){
