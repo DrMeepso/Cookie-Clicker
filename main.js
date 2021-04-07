@@ -105,7 +105,7 @@ Score = Cookies
 }
 
 function BetaTag (Password) {
-if (Password == "Pog123" || localStorage.Tag == "Beta") {
+if (hashCode(Password) == "-1899007222" || localStorage.Tag == "Beta") {
     rightDiv.appendChild(botRightCent)
     botRightCent.appendChild(BTTag)
     BTTag.src = "img/BetaTester.png"
@@ -117,6 +117,9 @@ if (Password == "Pog123" || localStorage.Tag == "Beta") {
 
 document.getElementById("scroll").hidden = true
 
+hashCode = function(s){
+  return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
+}
 
 UpdateText()
 //dont look at this you meany
