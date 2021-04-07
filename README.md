@@ -6,6 +6,7 @@
 
 ### To do...
 - [X] Get basics in (Cookie, Rows, Animated Background, ect)
+- [X] Cookie Jiggle Physics
 - [X] Get basic upgrades in
 - [ ] Get all upgrades in
 - [ ] Get overview window working
