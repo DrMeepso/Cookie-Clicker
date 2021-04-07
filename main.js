@@ -1,3 +1,5 @@
+//Drmeepso was here 
+
 var Cookie = document.getElementById("Cookie")
 var Text = document.getElementById("Text")
 var CPSText = document.getElementById("CPS")
@@ -32,13 +34,6 @@ alert("Unknown devise type\n--" + navigator.platform + "-- If you see this pleas
 leftDiv.style.height = "125%"
 rightDiv.style.height = "125%"
 } 
-
-//if (localStorage.Score == undefined) {
-//console.log("First Time")
-//} else {
-//Score = parseInt(localStorage.Score)
-//CPS = parseInt(localStorage.CPS)
-//}
 
 setInterval(function(){ 
     //this code runs every msecond 
@@ -124,4 +119,5 @@ document.getElementById("scroll").hidden = true
 
 
 UpdateText()
+//dont look at this you meany
 BetaTag()
