@@ -13,7 +13,7 @@
 - [ ] Easter Eggs ;)
 
 ### Code contributors 
-![DrMeepso](https://avatars.githubusercontent.com/u/50252724)
+[![DrMeepso](https://avatars.githubusercontent.com/u/50252724)](https://twitter.com/DevMeepso)
 
 *Its just me. im lonely*
 
