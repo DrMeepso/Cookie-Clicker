@@ -38,10 +38,6 @@ rightDiv.style.height = "125%"
 setInterval(function(){ 
     //this code runs every msecond 
     Auto(ACPS / 200)
-}, 1);
-
-setInterval(function(){ 
-    //this code runs every msecond 
     Cookie.width = lerp(Cookie.height, cookieHeight, 0.08)
     Cookie.height = lerp(Cookie.width, cookieWidth, 0.08)
 }, 1);
@@ -56,8 +52,7 @@ Cookieclick()
 function Auto(ammount){
 Score += ammount
 UpdateText()
-if (ammount > 0) {
-}}
+}
 
 function Cookieclick () {
 
